@@ -66,7 +66,7 @@ def main():
             login(usernames[each_login], passwords[each_login])
             for i in range(30):
                 do_search(random.choice(words) + " " + random.choice(words))
-                time.sleep(random.uniform(.2, 2.0))
+                time.sleep(random.uniform(.5, 5.0))
             print(usernames[each_login] + " has " + get_points() + " points.")
             logout()
             print(usernames[each_login] + " is done.\n")
