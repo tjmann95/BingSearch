@@ -64,8 +64,9 @@ def main():
         if usernames[each_login]:
             print(usernames[each_login] + "...")
             login(usernames[each_login], passwords[each_login])
-            print(usernames[each_login] + " has " + get_points() + " points.")
             for i in range(30):
+                if i == 1:
+                    print(usernames[each_login] + " has " + get_points() + " points.")
                 do_search(random.choice(words) + " " + random.choice(words))
                 time.sleep(random.uniform(.5, 5.0))
             print(usernames[each_login] + " has " + get_points() + " points.")
