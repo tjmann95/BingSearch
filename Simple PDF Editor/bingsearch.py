@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import random
 import time
-import bs4
-import urllib.request
 
 browser = webdriver.Chrome(executable_path="C:\\Users\\1117254\\Documents\\chromedriver.exe")
 browser.set_window_size(1920, 1080)
